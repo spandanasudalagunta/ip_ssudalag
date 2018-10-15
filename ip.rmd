@@ -43,3 +43,8 @@ get.variables(x)
 
 ## integer programming with x1>=4
 
+```{r}
+x <- read.lp("ip2.lp")
+x
+```
+
