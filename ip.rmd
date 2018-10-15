@@ -1,0 +1,45 @@
+---
+title: "Ip.rmd"
+output: html_document
+---
+## as an lp problem without taking x1 and x2 as integers
+```{r}
+library("lpSolveAPI")
+x <- read.lp("ip.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1<=3
+```{r}
+x <- read.lp("ip1.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1>=4
+
