@@ -303,3 +303,15 @@ get.variables(x)
 ```
 
 ## our optimal solution is x1=5 and x2=0, objective function= 40
+### Visualization of integer programming, red point in the graph is the optimal solution 
+```{r}
+X1 <- c(3.75,3,4,4.4,4,5,3.88,3,3,4,4.44,4,5)
+X2 <- c(2.25,3,1.8,1,1,0,2,3,3,1.8,1,1,0)
+data <- data.frame(X1, X2)
+
+plot(X1, X2, pch = 10, col= ifelse(X1==5, "red", "black"), 
+     main = 'Visualization of integer programming', col.main=4, 
+     col.lab=6, col.axis=9)
+
+```
+
