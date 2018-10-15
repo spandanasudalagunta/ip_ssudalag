@@ -23,8 +23,9 @@ get.constraints(x)
 get.variables(x)
 ```
 
-## integer programming with x1<=3
+## we are solving the x1 branch,integer programming with x1<=3
 ```{r}
+library("lpSolveAPI")
 x <- read.lp("ip1.lp")
 x
 ```
@@ -48,3 +49,257 @@ x <- read.lp("ip2.lp")
 x
 ```
 
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x2<=1
+
+```{r}
+x <- read.lp("ip3.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x2>=2
+
+```{r}
+x <- read.lp("ip4.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1=4
+
+```{r}
+x <- read.lp("ip5.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1>=5
+
+```{r}
+x <- read.lp("ip6.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+## we are solving the x2 branch, integer programming with x2<=2
+
+```{r}
+x <- read.lp("ip7.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x2>=3
+
+```{r}
+x <- read.lp("ip8.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1<=3
+
+```{r}
+x <- read.lp("ip9.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1>=4
+
+```{r}
+x <- read.lp("ip10.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x2<=1
+
+```{r}
+x <- read.lp("ip3.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x2>=2
+
+```{r}
+x <- read.lp("ip4.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1=4
+
+```{r}
+x <- read.lp("ip5.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## integer programming with x1>=5
+
+```{r}
+x <- read.lp("ip6.lp")
+x
+```
+
+```{r}
+solve(x)
+get.objective(x)
+```
+
+```{r}
+get.constraints(x)
+```
+
+```{r}
+get.variables(x)
+```
+
+## our optimal solution is x1=5 and x2=0, objective function= 40
